@@ -32,7 +32,7 @@ class CollectionDetail(APIView):
 
     def get(self, request, title):
         collection = self.get_object(title)
-        serializer = CollectionSerializer(collection, many=True)
+        serializer = CollectionSerializer(collection)
         return Response(serializer.data)
 
     def put(self, request, title):
