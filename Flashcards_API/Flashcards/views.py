@@ -64,7 +64,7 @@ class FlashcardList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class ReplyDetail(APIView):
+class FlashcardDetail(APIView):
 
     def get_object(self, collection):
         try:
