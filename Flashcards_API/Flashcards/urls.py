@@ -8,4 +8,5 @@ urlpatterns = [
     path('collections-flashcard/', views.FlashcardList.as_view()),
     path('collections-flashcard/<int:collection>/', views.FlashcardDetail.as_view()),
     path('collections-flashcard/<int:pk>/<str:word>/', views.FlashcardNumber.as_view()),
+    path('collections-flashcard/update/<int:pk>/', views.FlashcardEdit.as_view()),
 ]
